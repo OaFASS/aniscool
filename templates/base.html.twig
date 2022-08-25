@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        
+         <!-- Mobile Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <!-- Web Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playball&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="{{asset('css/style.home.css')}}" rel="stylesheet">
+  
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{asset('bootstrap/css/bootstrap.css')}}" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="{{asset('fonts/font-awesome/css/font-awesome.css')}}" rel="stylesheet">
+
+    <!-- Plugins -->
+    <link href="{{asset('plugins/magnific-popup/magnific-popup.css')}}" rel="stylesheet">
+    <link href="{{asset('plugins/rs-plugin-5/css/settings.css')}}" rel="stylesheet">
+    <link href="{{asset('plugins/rs-plugin-5/css/layers.css')}}" rel="stylesheet">
+    <link href="{{asset('plugins/rs-plugin-5/css/navigation.css')}}" rel="stylesheet">
+    <link href="{{asset('css/animations.css" rel="stylesheet')}}">
+    <link href="{{asset('plugins/slick/slick.css')}}" rel="stylesheet">
+    
+    <!-- The Project's core CSS file -->
+    <!-- Use css/rtl_style.css for RTL version -->
+    <link href="{{asset('css/style.css')}}" rel="stylesheet" >
+    <!-- The Project's Typography CSS file, includes used fonts -->
+    <!-- Used font for body: Roboto -->
+    <!-- Used font for headings: Raleway -->
+    <!-- Use css/rtl_typography-default.css for RTL version -->
+    <link href="{{asset('css/typography-default.css')}}" rel="stylesheet" >
+    <!-- Color Scheme (In order to change the color scheme, replace the blue.css with the color scheme that you prefer) -->
+    <link href="{{asset('css/skins/green.css')}}" data-style="styles-no-cookie" rel="stylesheet">
+    <link href="{{asset('style-switcher/style-switcher.css')}}" rel="stylesheet">
+    <link id="wsite-base-style" rel="stylesheet" type="text/css" href="{#asset('css/sitesdd2e.css?buildTime=1646848979')#}" />
+    <link rel="stylesheet" type="text/css" href="{{asset('css/old/fancybox0c35.css?1646848979')}}" />
+    <link rel="stylesheet" type="text/css" href=".{{asset('css/social-iconsc707.css?buildtime=1646848979')}}" media="screen,projection" />
+
+
+    <!-- Custom css -->
+    <link href="{{asset('css/custom.css')}}" rel="stylesheet">
+        {% block stylesheets %}
+            {{ encore_entry_link_tags('app') }}
+        {% endblock %}
+
+        {% block javascripts %}
+            {{ encore_entry_script_tags('app') }}
+        {% endblock %}
+        <style type='text/css'>
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {font-family:"Open Sans" !important;font-weight:400 !important;}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {color:#626262 !important;}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{color:#626262 !important;}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {font-family:"Montserrat" !important;font-weight:700 !important;font-style:normal !important;letter-spacing: 0px !important;}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {color:#2a2a2a !important;}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{font-family:"Montserrat" !important;font-weight:700 !important;color:#2a2a2a !important;text-transform:  uppercase !important;}
+#wsite-title {font-family:"Montserrat" !important;font-weight:700 !important;color:#000 !important;text-transform:  uppercase !important;}
+.wsite-menu-default a {font-family:"Open Sans" !important;font-weight:400 !important;text-transform:  uppercase !important;letter-spacing: 0px !important;}
+.wsite-menu a {font-family:"Open Sans" !important;font-weight:400 !important;}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {font-family:"Montserrat" !important;font-weight:700 !important;text-transform:  none !important;letter-spacing: 1px !important;}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {font-family:"Playball" !important;color:#fff !important;text-transform:  none !important;letter-spacing: 0px !important;}
+.wsite-button-inner {font-family:"Montserrat" !important;font-weight:700 !important;text-transform:  uppercase !important;letter-spacing: 2px !important;}
+.wsite-not-footer blockquote {font-family:"Georgia" !important;font-style:italic !important;}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+.wsite-button-small .wsite-button-inner {font-size:14px !important;}
+.wsite-button-large .wsite-button-inner {font-size:16px !important;}
+@media screen and (min-width: 767px) {.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {font-size:18px !important;line-height:30px !important;}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{font-size:14px !important;}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {font-size:30px !important;}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{font-size:15px !important;}
+#wsite-title {font-size:28px !important;}
+.wsite-menu-default a {font-size:15px !important;}
+.wsite-menu a {font-size:15px !important;}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {font-size:70px !important;}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {font-size:35px !important;}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {font-size:22px !important;line-height:31px !important;}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+}</style>
+<style type='text/css'>#wsite-com-product-images .wsite-imageaspectratio-image-height, .wsite-com-category-product-image-height.wsite-imageaspectratio-image-height, .wsite-product .wsite-imageaspectratio-image-height, .wsite-com-category-product-featured-image-height.wsite-imageaspectratio-image-height { margin-bottom: 75% !important } .wsite-com-category-product-group .wsite-com-column { width: 33.33% !important } .wsite-com-category-product-featured-group .wsite-com-column { width: 25.00% !important } .wsite-com-category-subcategory-group .wsite-com-column { width: 33.33% !important } </style>
+		
+    </head>
+    <body  class="front-page">
+        <!-- scrollToTop -->
+        <!-- ================ -->
+        <div class="scrollToTop circle"><i class="fa fa-angle-up"></i></div>
+        <!-- page wrapper start -->
+        <!-- ================ -->
+        <div class="page-wrapper">
+            <!-- header-container start -->
+      <div class="header-container">
+        <!-- header-top start -->
+        <!-- classes:  -->
+        <!-- "dark": dark version of header top e.g. class="header-top dark" -->
+        <!-- "colored": colored version of header top e.g. class="header-top colored" -->
+        <!-- ================ -->
+        <div class="header-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-5">
+                <!-- header-top-first start -->
+                <!-- ================ -->
+                <ul class="list-inline text-muted hidden-sm-down">
+                  <li class="list-inline-item"><strong class="pl-1">Call Us:</strong> <a href="#">(833) 264-7266 (Ext. 1)</a></li>
+                </ul>
+                <!-- header-top-first end -->
+              </div>
+              <div class="col-12 col-md-7">
+                <!-- header-top-second start -->
+                <!-- ================ -->
+                <div id="header-top-second"  class="clearfix text-right">
+                  <ul class="list-inline">
+                    <li class="list-inline-item hidden-md-up"><strong class="pl-1">Call Us:</strong> <a href="#">(833) 264-7266 (Ext. 1)</a></li>
+                    <li class="list-inline-item"><i class="fa fa-search pr-1"></i> <a class="link-dark" href="#">Track</a></li>
+                    <li class="list-inline-item"><i class="fa fa-user pl-2 pr-1"></i> <a class="link-dark" href="">Login</a></li>
+                    <li class="list-inline-item"><i class="fa fa-support pl-2 pr-1"></i> <a class="link-dark" href="">Support</a></li>
+                  </ul>
+                </div>
+                <!-- header-top-second end -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- header-top end -->
+
+        <!-- header start -->
+        <!-- classes:  -->
+        <!-- "fixed": enables fixed navigation mode (sticky menu) e.g. class="header fixed clearfix" -->
+        <!-- "fixed-desktop": enables fixed navigation only for desktop devices e.g. class="header fixed fixed-desktop clearfix" -->
+        <!-- "fixed-all": enables fixed navigation only for all devices desktop and mobile e.g. class="header fixed fixed-desktop clearfix" -->
+        <!-- "dark": dark version of header e.g. class="header dark clearfix" -->
+        <!-- "centered": mandatory class for the centered logo layout -->
+        <!-- ================ -->
+        <header class="header fixed fixed-desktop clearfix">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-auto hidden-md-down pl-3">
+                <!-- header-first start -->
+                <!-- ================ -->
+                <div class="header-first clearfix">
+
+                  <!-- logo -->
+                  <div id="logo" class="logo">
+                    <a href="{{path('app_home')}}"><img id="logo_img" src="{{asset('image/400dpilogocropped_1_orig.png')}}" width="150px" alt="The Project"></a>
+                  </div>
+
+                  <!-- name-and-slogan -->
+                  <div class="site-slogan">
+                    
+                  </div>
+
+                </div>
+                <!-- header-first end -->
+
+              </div>
+              <div class="col-lg-8 ml-lg-auto">
+          
+                <!-- header-second start -->
+                <!-- ================ -->
+                <div class="header-second clearfix">
+                  
+                    <!-- main-navigation start -->
+                    <!-- classes: -->
+                    <!-- "onclick": Makes the dropdowns open on click, this the default bootstrap behavior e.g. class="main-navigation onclick" -->
+                    <!-- "animated": Enables animations on dropdowns opening e.g. class="main-navigation animated" -->
+                    <!-- ================ -->
+                    <div class="main-navigation main-navigation--mega-menu  animated">
+                    <nav class="navbar navbar-expand-lg navbar-light p-0">
+                        <div class="navbar-brand clearfix hidden-lg-up">
+
+                        <!-- logo -->
+                        <div class="logo">
+                            <a href="{{path('app_home')}}"><img id="logo-img-mobile" src="{{asset('image/400dpilogocropped__orig.png')}}" width="150px" alt="ANISCOOL"></a>
+                        </div>
+
+                        <!-- name-and-slogan -->
+                        <div class="site-slogan">
+                           
+                        </div>
+
+                        </div>
+                        
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse-1" aria-controls="navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                        <!-- main-menu -->
+                        <ul class="navbar-nav ml-xl-auto">
+
+                            <!-- mega-menu start -->
+                            <li class="nav-item  {% if menu =='home'%}active {% endif %}">
+                            <a href="{{path('app_home')}}" class="nav-link " id="first-dropdown" >HOME</a>
+                            </li>
+                            <!-- mega-menu end -->
+                            <!-- mega-menu start -->
+                            <li class="nav-item {% if menu =='about'%}active {% endif %} ">
+                            <a href="{{path('app_about')}}" class="nav-link" id="second-dropdown" >ABOUT</a>
+                           
+                            </li>
+                            
+                            <!-- mega-menu end -->
+                            <li class="nav-item dropdown ">
+                              <a href="" class="nav-link dropdown-toggle" id="first-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SERVICES</a>
+                                <ul class="dropdown-menu" aria-labelledby="first-dropdown">
+                                    <li ><a href="{{path('app_wheelchair')}}">Wheelchair</a></li>
+                                    <li ><a href="{{path('app_stairschair')}}">Stair's Chair</a></li>
+                                    <li ><a href="{{path('app_stretcher')}}">Stretcher</a></li>
+                                    <li ><a href="{{path('app_bls')}}">BLS</a></li>
+                                    <li ><a href="{{path('app_ambulatory')}}">Ambulatory</a></li>
+                                    <li ><a href="{{path('app_bariatric')}}">Bariatric</a></li>
+                                  </ul>
+                            </li>
+                            
+                            <!-- mega-menu start -->
+                            <li class="nav-item {% if menu =='carrier'%}active {% endif %} ">
+                            <a href="{{path('app_carrier')}}" class="nav-link" >CARRIER APPLICATION</a>
+                          
+                            </li>
+                            <li class="nav-item {% if menu =='contact'%}active {% endif %}  ">
+                            <a href="{{path('app_contact')}}" class="nav-link" >CONTACT</a>
+                            
+                            </li>
+                        </ul>
+                        <!-- main-menu end -->
+                        </div>
+                    </nav>
+                    </div>
+                <!-- main-navigation end -->
+                </div>
+                <!-- header-second end -->
+
+              </div>
+             {#<div class="col-auto hidden-md-down pl-0 pl-md-1">
+                <!-- header dropdown buttons -->
+                <div class="header-dropdown-buttons">
+                  <a href="page-contact.html" class="btn btn-sm btn-default">Contact Us <i class="fa fa-envelope-o pl-1"></i></a>
+                </div>
+                <!-- header dropdown buttons end -->
+              </div>#}
+            </div>
+          </div>
+        </header>
+        <!-- header end -->
+      </div>
+      <!-- header-container end -->
+       <!-- banner start -->
+      <!-- ================ -->
+      {#<div class="banner clearfix">
+
+        <!-- slideshow start -->
+        <!-- ================ -->
+        <div class="slideshow">
+
+          <!-- slider revolution start -->
+          <!-- ================ -->
+          <div class="slider-revolution-5-container">
+            <div id="slider-banner-fullwidth-big-height" class="slider-banner-fullwidth-big-height rev_slider" data-version="5.0">
+              <ul class="slides">
+                <!-- slide 1 start -->
+                <!-- ================ -->
+                <li data-transition="crossfade" data-slotamount="default" data-masterspeed="default" data-title="Next Generation Template">
+
+                <!-- main image -->
+                <img src="images/logistics-slide-1.jpg" alt="slidebg1" data-bgposition="center top"  data-bgrepeat="no-repeat" data-bgfit="cover"  class="rev-slidebg">
+                
+                <!-- LAYER NR. 1 -->
+                <div class="tp-caption sfb fadeout dark-translucent-bg caption-box text-left"
+                  style="background-color: rgba(0, 0, 0, 0.8);"
+                  data-x="right"
+                  data-y="center"
+                  data-start="600"
+                  data-whitespace="normal"
+                  data-transform_idle="o:1;"
+                  data-transform_in="y:[100%];sX:1;sY:1;o:0;s:1150;e:Power4.easeInOut;"
+                  data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;"
+                  data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;">
+                  <h2 class="title">Fast Shipping Everywhere</h2>
+                  <div class="separator-2 clearfix"></div>
+                  <p>Voluptatem ad provident non repudiandae beatae cupiditate amet reiciendis lorem ipsum dolor sit amet, consectetur.</p>
+                  <div class="text-right"><a class="btn btn-small btn-default margin-clear" href="page-services.html">Read More</a></div>
+                </div>
+
+                </li>
+                <!-- slide 1 end -->
+
+                <!-- slide 2 start -->
+                <!-- ================ -->
+                <li data-transition="crossfade" data-slotamount="default" data-masterspeed="default" data-title="Premium Bootstrap Template">
+
+                <!-- main image -->
+                <img src="images/logistics-slide-2.jpg" alt="slidebg2" data-bgposition="center top"  data-bgrepeat="no-repeat" data-bgfit="cover" class="rev-slidebg">
+
+                <!-- LAYER NR. 1 -->
+                <div class="tp-caption sfb fadeout dark-translucent-bg caption-box text-left"
+                  style="background-color: rgba(0, 0, 0, 0.8);"
+                  data-x="left"
+                  data-y="center"
+                  data-start="600"
+                  data-whitespace="normal"
+                  data-transform_idle="o:1;"
+                  data-transform_in="y:[100%];sX:1;sY:1;o:0;s:1150;e:Power4.easeInOut;"
+                  data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;"
+                  data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;"
+                  data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;">
+                  <h2 class="title">Shipping Services</h2>
+                  <div class="separator-2 clearfix"></div>
+                  <p>Voluptatem ad provident non repudiandae beatae cupiditate amet reiciendis lorem ipsum dolor sit amet, consectetur.</p>
+                  <div class="text-right"><a class="btn btn-small btn-default margin-clear" href="page-services.html">Read More</a></div>
+                </div>
+
+                </li>
+                <!-- slide 2 end -->
+              </ul>
+              <div class="tp-bannertimer"></div>
+            </div>
+          </div>
+          <!-- slider revolution end -->
+
+        </div>
+        <!-- slideshow end -->
+
+      </div>#}
+      <!-- banner end -->
+        {% block body %}{% endblock %}
+         <!-- footer start (Add "dark" class to #footer in order to enable dark footer) -->
+      <!-- ================ -->
+      <footer id="footer" class="clearfix">
+
+        <!-- .footer start -->
+        <!-- ================ -->
+        <div class="footer">
+        <div class="footer-wrap">
+        <div class="container">
+           <div class="footer"><div class='wsite-elements wsite-footer'>
+<h2 class="wsite-content-title" style="text-align:center;"><br /><font size="6">Company's Certifications&nbsp;&amp; Affiliations</font><br /><br /></h2>
+
+<div><div class="wsite-multicol"><div class="wsite-multicol-table-wrap" style="margin:0 -15px;">
+	<table class="wsite-multicol-table">
+		<tbody class="wsite-multicol-tbody">
+			<tr class="wsite-multicol-tr">
+				<td class="wsite-multicol-col" style="width:10%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="{{asset('image/logo1.jpg')}}" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:10%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="{{asset('image/logo2.jpg')}}" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:10%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="{{asset('image/logo3.jpg')}}" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+
+
+					
+				</td>				<td class="wsite-multicol-col" style="width:10%; padding:0 15px;">
+					
+						
+
+<div><div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0;margin-right:0;text-align:center">
+<a>
+<img src="{{asset('image/logo4.jpg')}}" alt="Picture" style="width:auto;max-width:100%" />
+</a>
+<div style="display:block;font-size:90%"></div>
+</div></div>
+
+
+
+
+					
+				</td>			</tr>
+		</tbody>
+	</table>
+</div></div></div>
+
+<div class="wsite-spacer" style="height:198px;"></div>
+
+
+
+
+          <div class="container">
+            <div class="footer-inner">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="footer-content">
+                    <h4 class="title"><i class="fa fa-file pr-10"></i> Site Link</h4>
+                    <div class="separator-2"></div>
+                    <nav class="mb-20">
+                      <ul class="nav flex-column list-style-icons">
+                        <li class="nav-item"><a class="nav-link" href="{{path('app_home')}}"><i class="fa fa-chevron-circle-right"></i> Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{path('app_about')}}"><i class="fa fa-chevron-circle-right"></i> About</a></li>
+                        <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-chevron-circle-right"></i> Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-chevron-circle-right"></i> Contact</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="footer-content">
+                    <h4 class="title"><i class="fa fa-file pr-10"></i> Contact Information</h4>
+                    <nav class="mb-20">
+                      <ul class="nav flex-column list-style-icons">
+                        <li class="nav-item"><a class="nav-link" href="tel:833264726"><i class="fa fa-phone"></i>(833) 264-7266 (Ext. 1)</a></li>
+                        <li class="nav-item"><a class="nav-link" href="mailto:support@aniscool.com"><i class="fa fa-envelope"></i>support@aniscool.com </a></li>
+                        <li class="nav-item"><a class="nav-link" href=""><i class="fa fa-map-pin"></i>720 University Blvd West, MD 209</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="d-flex justify-content-end">
+                    <img src="{{asset('image/400dpilogocropped_1_orig.png')}}" alt="Aniscool, LLC logo" style="width:auto;max-width:50%" />
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- .footer end -->
+
+        <!-- .subfooter start -->
+        <!-- ================ -->
+        <div class="subfooter">
+          <div class="container">
+            <div class="subfooter-inner">
+              <div class="row">
+                <div class="col-12">
+                  <p class="text-center">Copyright © 2022. All Rights Reserved</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- .subfooter end -->
+
+      </footer>
+      <!-- footer end -->
+        </div>
+        <!-- page-wrapper end -->
+        
+        <!-- JavaScript files placed at the end of the document so the pages load faster -->
+        <!-- ================================================== -->
+        <!-- Jquery and Bootstap core js files -->
+        <script src="{{asset('plugins/jquery.min.js')}}"></script>
+        <script src="{{asset('bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+        <!-- jQuery Revolution Slider  -->
+        <script src="{{asset('plugins/rs-plugin-5/js/jquery.themepunch.tools.min.js')}}"></script>
+        <script src="{{asset('plugins/rs-plugin-5/js/jquery.themepunch.revolution.min.js')}}"></script>
+        <!-- Isotope javascript -->
+        <script src="{{asset('plugins/isotope/imagesloaded.pkgd.min.js')}}"></script>
+        <script src="{{asset('plugins/isotope/isotope.pkgd.min.js')}}"></script>
+        <!-- Magnific Popup javascript -->
+        <script src="{{asset('plugins/magnific-popup/jquery.magnific-popup.min.js')}}"></script>
+        <!-- Appear javascript -->
+        <script src="{{asset('plugins/waypoints/jquery.waypoints.min.js')}}"></script>
+        <script src="{{asset('plugins/waypoints/sticky.min.js')}}"></script>
+        <!-- Count To javascript -->
+        <script src="{{asset('plugins/countTo/jquery.countTo.js')}}"></script>
+        <!-- Slick carousel javascript -->
+        <script src="{{asset('plugins/slick/slick.min.js')}}"></script>
+        <!-- Initialization of Plugins -->
+        <script src="{{asset('js/template.js')}}"></script>
+        <!-- Custom Scripts -->
+        <script src="{{asset('js/custom.js')}}"></script>
+        <!-- Color Switcher (Remove these lines) -->
+        <script src="{{asset('style-switcher/style-switcher.js')}}"></script>
+        {#
+          @f&n&d&@
+          #}
+    </body>
+</html> 

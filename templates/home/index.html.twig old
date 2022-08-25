@@ -1,0 +1,247 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}ANISCOOL{% endblock %}
+
+{% block body %}
+ <div id="page-start"></div>
+
+      <!-- section start -->
+      <!-- ================ -->
+      <section class="section light-gray-bg border-clear clearfix padding-ver-clear">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-4 padding-bottom-clear pv-30">
+              <div class="hc-item-box-2">
+                <span class="icon without-bg"><i class="text-default fa fa-truck"></i></span>
+                <div class="body">
+                  <h4 class="title">Wheelchair</h4>
+                  <p>We provide specialized dialysis transportation services to help patients get to and from appointments.</p>
+                  <p><a href="{{path('app_service')}}">Read More<i class="pl-1 fa fa-angle-double-right"></i></a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 padding-bottom-clear pv-30 default-translucent-bg">
+              <div class="hc-item-box-2">
+                <span class="icon without-bg"></i></span>
+                <div class="body">
+                  <h3 class="title"><b>Non-Emergency Medical Transportation Services</b></h3>
+                  <h4>Serving Maryland, Washington DC and Arlington, Alexandria & Fairfax, VA</h4>
+                  <p>{#<a class="link-light" href="">Read More<i class="pl-1 fa fa-angle-double-right"></i></a>#}</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 padding-bottom-clear pv-30">
+              <div class="hc-item-box-2">
+                <span class="icon"><img src="{{asset('image/strecher.jpeg')}}" alt="" width="40px" height="70px"/></span>
+                <div class="body">
+                  <h4 class="title">Stretchers & BLS</h4>
+                  <p>Let us help you with safe, timely, compassionate transport.</p>
+                  <p><a href="{{path('app_service')}}">Read More<i class="pl-1 fa fa-angle-double-right"></i></a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section end -->
+
+      <!-- section start -->
+      <!-- ================ -->
+      <section class="pv-40">
+        <div class="container">
+          <div class="row">
+
+            <!-- main start -->
+            <!-- ================ -->
+            <div class="main col-12">
+              <!-- page-title start -->
+              <!-- ================ -->
+              <h1 class="page-title text-center">Our <strong>Services</strong></h1>
+              <div class="separator"></div>
+              <p class="large text-center"></p>
+              <br>
+              <!-- page-title end -->
+
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="image-box style-2 mb-20">
+                    <div class="overlay-container overlay-visible">
+                      <img src="{{asset('image/ambulance1.jpeg')}}" alt="">
+                      <a href="" class="overlay-link"><i class="fa fa-link"></i></a>
+                      <div class="overlay-bottom">
+                        <div class="text">
+                          <p class="lead margin-clear mobile-visible">Wheelchair</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="body text-center padding-horizontal-clear">
+                      <p>At Express Medical Transporters, we understand that wheelchair transportation isn’t a luxury — it’s a core need. For those with severe disabilities, it’s often the only way to get around..</p>
+                      <p><a class="btn btn-default" href="{{path('app_service')}}">Book Now</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="image-box style-2 mb-20">
+                    <div class="overlay-container overlay-visible">
+                      <img src="{{asset('image/ambulance3.jpeg')}}" alt="">
+                      <a href="" class="overlay-link"><i class="fa fa-link"></i></a>
+                      <div class="overlay-bottom">
+                        <div class="text">
+                          <p class="lead margin-clear mobile-visible">Stair's Chair</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="body text-center padding-horizontal-clear">
+                      <p>At Express Medical Transporters, we understand that wheelchair transportation isn’t a luxury — it’s a core need. For those with severe disabilities, it’s often the only way to get around..</p>
+                      <p><a class="btn btn-default" href="{{path('app_service')}}">Book Now</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-6">
+                  <div class="image-box style-2 mb-20">
+                    <div class="overlay-container overlay-visible">
+                      <img src="{{asset('image/ambulance1.jpeg')}}" alt="">
+                      <a href="" class="overlay-link"><i class="fa fa-link"></i></a>
+                      <div class="overlay-bottom">
+                        <div class="text">
+                          <p class="lead margin-clear mobile-visible">Stretchers</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="body text-center padding-horizontal-clear">
+                      <p>Whether you, your loved one or your patient is in a wheelchair, bed bound or simply needs a hand getting around, we can help.</p>
+                      <p><a class="btn btn-default" href="{{path('app_service')}}">Book Now</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="image-box style-2 mb-20">
+                    <div class="overlay-container overlay-visible">
+                      <img src="{{asset('image/ambulance3.jpeg')}}" alt="">
+                      <a href="" class="overlay-link"><i class="fa fa-link"></i></a>
+                      <div class="overlay-bottom">
+                        <div class="text">
+                          <p class="lead margin-clear mobile-visible">BLS</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="body text-center padding-horizontal-clear">
+                      <p>We provide specialized dialysis transportation services to help patients get to and from appointments.</p>
+                      <p><a class="btn btn-default" href="{{path('app_service')}}">Book Now</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- main end -->
+
+          </div>
+        </div>
+      </section>
+      <!-- section end -->
+
+      <!-- section start -->
+      <!-- ================ -->
+      <section class="section fixed-bg dark-translucent-bg" style="background-image: url(images/logistics-section-1.jpg); background-position: 50% 50%;">
+        <div class="container">
+          <div class="row justify-content-lg-center">
+            <div class="col-lg-8 text-center">
+              <h2 class="mt-4">Company's Certifications&nbsp;&amp; Affiliations</strong></h2>
+              <div class="separator"></div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+        <div class="d-flex justify-content-center">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-2">
+                  <div class="d-flex justify-content-start" data-animation-effect="fadeIn" data-effect-delay="100">
+                    
+                      <img src="{{asset('image/yixv-pct-400x400_1_orig.jpg')}}" alt="Picture" style="height:100px;width:auto;max-width:50%" />
+                      </div>
+                    <div class="d-flex justify-content-start col-md-2">Maryland Public Service Commission <br>#5977</div>
+                  
+            </div>
+            <div class="col-md-2">
+                  <div class="d-flex justify-content-start" data-animation-effect="fadeIn" data-effect-delay="100">
+                    
+                      <img src="{{asset('image/scc-logo_1_orig.jpg')}}" alt="Picture" style="height:100px;width:auto;max-width:50%" />
+                    </div>
+                    <div class="d-flex justify-content-start col-md-2">Virginia State Corporation Commission <br>#T0753634</div>
+                  
+            </div>
+            <div class="col-md-2">
+                  <div class="d-flex justify-content-start" data-animation-effect="fadeIn" data-effect-delay="100">
+                      <img src="{{asset('image/wmatc-lrg_1_orig.jpg')}}" alt="Picture" style="height:100px;width:auto;max-width:50%" />
+                    </a>
+                    </div>
+                    <div class="d-flex justify-content-start col-md-2" style="font-size:15px">Washington Metropolitan Area Transit Commission&nbsp;<br>#3156</div>
+                  
+            </div>
+             <div class="col-md-2">
+                  <div class="d-flex justify-content-start" data-animation-effect="fadeIn" data-effect-delay="100">
+                    
+                      <img src="{{asset('image/hhsprintlogo_1_orig.jpg')}}" alt="Picture" style="height:100px;width:auto;max-width:50%" />
+                    </div>
+                    <div class="d-flex justify-content-start">National Provider Identifier&nbsp;<br>#1649769183</div>
+                  
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+      <!-- section end -->
+
+      <!-- section start -->
+      <!-- ================ -->
+      <section class="clearfix light-gray-bg pv-40">
+        <div class="slick-carousel content-slider">
+          <div>
+            <div class="container">
+              <div class="row justify-content-lg-center">
+                <div class="col-lg-8">
+                  <div class="testimonial text-center">
+                    <div class="testimonial-image">
+                      <img src="images/testimonial-1.jpg" alt="Famous Person" title="Famous Person" class="rounded-circle">
+                    </div>
+                    <h3>Just Perfect!</h3>
+                    <div class="separator"></div>
+                    <div class="testimonial-body">
+                      <blockquote>
+                        <p>Sed ut perspiciatis unde omnis iste natu error sit voluptatem accusan tium dolore laud antium, totam rem dolor sit amet tristique pulvinar, turpis arcu rutrum nunc, ac laoreet turpis augue a justo.</p>
+                      </blockquote>
+                      <div class="testimonial-info-1">- Famous Person</div>
+                      <div class="testimonial-info-2">By Company</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="container">
+              <div class="row justify-content-lg-center">
+                <div class="col-lg-8">
+                  <div class="testimonial text-center">
+                    <div class="testimonial-image">
+                      <img src="images/testimonial-2.jpg" alt="Famous Person" title="Famous Person" class="rounded-circle">
+                    </div>
+                    <h3>Amazing!</h3>
+                    <div class="separator"></div>
+                    <div class="testimonial-body">
+                      <blockquote>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et cupiditate deleniti ratione in. Expedita nemo, quisquam, fuga adipisci omnis ad mollitia libero culpa nostrum est quia eos esse vel!</p>
+                      </blockquote>
+                      <div class="testimonial-info-1">- Famous Person</div>
+                      <div class="testimonial-info-2">By Company</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section end -->
+{% endblock %}

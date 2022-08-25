@@ -1,0 +1,944 @@
+{% extends "base.html.twig" %}
+{% block title %}Job Application{% endblock %}
+{% block body %}
+
+<section class="mb-4 container" >
+
+    <!--Section heading-->
+    
+    <!--Section description-->
+    <br>
+    <h1 class="text-center w-responsive mx-auto mb-5">Job Application</h1>
+
+    <div class="container">
+
+        <!--Grid column-->
+        <div class="col-12">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                <fieldset>
+                    <legend> Personnal information</legend>
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">First name</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Last name</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <select id="fr" name="" class="form-select" aria-required="true" aria-label="Choose your position">
+                                <option value="Driver's Position">Driver's Position</option>
+                                <option value="Office Assistant Position">Office Assistant Position</option>
+                                <option value="Both Driver &amp; Office Assistant Position">Both Driver &amp; Office Assistant Position</option>
+                            </select><br>
+                            <label for="">Your position</label>
+                           
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Email</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Number</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="md-form mb-10">
+                            <select id="fr" name="" class="form-select" aria-required="true" aria-label="Choose your position" style="border:1">
+                                <option selected>Male</option>
+                                <option value="1">Femele</option>
+                                <option value="2">Other</option>
+                              </select><br>
+                           <label for="">Gender</label>                              
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6">
+                        
+                        <input class="form-control" type="file" id="formFile"> 
+                        <label for="formFile" class="form-label">Upload your resume</label>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <select class="form-select" aria-label="" style="border:2px ; width: 200px;">
+                                <option selected>YES</option>
+                                <option value="1">NO</option>
+                              </select><br>
+                            <label for="">Are you a citizen of the United States? </label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <select class="form-select" aria-label="" style="border:2px ; width: 200px;">
+                                <option selected>YES I am authorized</option>
+                                <option value="1">NO I'm not authorized</option>
+                              </select><br>
+                            <label for="email" class="">If no, are you authorized to work in the U.S ?</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <select class="form-select" aria-label="" style="border:2px ; width: 200px;">
+                                <option selected>YES</option>
+                                <option value="1">NO</option>
+                              </select><br>
+                            <label for="">Have you ever been convicted of a felony?  </label>
+                        </div>
+                        <div class="md-form mb-0">
+                            <textarea name="" id="" class="form-control" ></textarea><br>
+                            <label for="email" class="">If yes, explain</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    
+                    <!--Grid column-->
+
+                </div> 
+
+
+
+            </fieldset>  
+            <h3 style="color:green"> With Aniscool</h3>
+             <!--Grid row-->
+             <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-6">
+                    <div class="md-form mb-0">
+                        <input type="date" id="name" name="name" class="form-control">
+                        <label for="name" class="">Available starting date </label>
+                    </div>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6">
+                    <div class="md-form mb-0">
+                        <input type="text" id="email" name="email" class="form-control">
+                        <label for="email" class="">Desired salary</label>
+                    </div>
+                </div>
+                <!--Grid column-->
+
+            </div> 
+            <div class="row">
+
+                <!--Grid column-->
+                <div class="col-md-6">
+                    <div class="md-form mb-0">
+                        <select class="form-select" aria-label="" style="border:2px !important ; width: 200px;">
+                            <option selected>YES</option>
+                            <option value="1">NO</option>
+                          </select><br>
+                        <label for="name" class="">Have you ever worked for Aniscool? </label>
+                    </div>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-6">
+                    <div class="md-form mb-0">
+                        <input type="date" id="email" name="email" class="form-control">
+                        <label for="email" class="">If so, when?</label>
+                    </div>
+                </div>
+                <!--Grid column-->
+
+            </div>  
+            
+            <fieldset>
+                <legend>Education</legend>
+                <h5>High School</h5>
+                <div class="row">
+                    <div class="col-12">
+                        <input type="text" name="" id="" class="form-control"><br>
+                        
+                    </div>
+
+                </div>
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Line 1</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Line 2</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">City</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">State</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Zip Code</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Country</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="date" id="name" name="name" class="form-control">
+                            <label for="name" class="">From</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="date" id="email" name="email" class="form-control">
+                            <label for="email" class="">To</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <select class="form-select" aria-label="" style="border:2px ; width: 200px;">
+                                <option selected>YES</option>
+                                <option value="1">NO</option>
+                              </select><br>
+                            <label for="name" class="">Did you graduate?</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Degree</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+
+
+                <h5>College</h5>
+                <div class="row">
+                    <div class="col-12">
+                        <input type="text" name="" id="" class="form-control"><br>
+                        
+                    </div>
+
+                </div>
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Line 1</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Line 2</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">City</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">State</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Zip Code</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Country</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="date" id="name" name="name" class="form-control">
+                            <label for="name" class="">From</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="date" id="email" name="email" class="form-control">
+                            <label for="email" class="">To</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <select class="form-select" aria-label="" style="border:2px ; width: 200px;">
+                                <option selected>YES</option>
+                                <option value="1">NO</option>
+                              </select><br>
+                            <label for="name" class="">Did you graduate?</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Degree</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+
+                <h5>Other</h5>
+                <div class="row">
+                    <div class="col-12">
+                        <input type="text" name="" id="" class="form-control"><br>
+                        
+                    </div>
+
+                </div>
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Line 1</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Line 2</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">City</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">State</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Zip Code</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Country</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="date" id="name" name="name" class="form-control">
+                            <label for="name" class="">From</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="date" id="email" name="email" class="form-control">
+                            <label for="email" class="">To</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <select class="form-select" aria-label="" style="border:2px ; width: 200px;">
+                                <option selected>YES</option>
+                                <option value="1">NO</option>
+                              </select><br>
+                            <label for="name" class="">Did you graduate?</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Degree</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Experience</legend>
+                <h5>Company</h5>
+                <div class="row">
+                    <div class="col-12">
+                        <input type="text" name="" id="" class="form-control"><br>
+                        
+                    </div>
+
+                </div>
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Line 1</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Line 2</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">City</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">State</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Zip Code</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Country</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Starting salary</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="number" id="email" name="email" class="form-control">
+                            <label for="email" class="">Phone number</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text" class="form-control">
+                            <label  class="">Job title</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text"  class="form-control">
+                            <label for="email" class="">Ending salary</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Supervisor</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Reason for leaving </label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="date" class="form-control">
+                            <label  class="">From</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="date"  class="form-control">
+                            <label for="email" class="">to</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-6">
+                        <div class="lg-form mb-0">
+                            <textarea name="" id="" class="form-control">
+
+                            </textarea>
+                            <label for="name" class="">Responsabilities</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    
+                    <div class="col-6">
+                        <div class="lg-form mb-0">
+                            <select class="form-select" aria-label="" style="border:2px ; width: 200px;">
+                                <option selected>YES</option>
+                                <option value="1">NO</option>
+                              </select><br>
+                            <label for="name" class="">May we contact your previous supervisor for a reference? </label>
+                        </div>
+                    </div>
+                </div>
+
+                <h5>Other</h5>
+                <div class="row">
+                    <div class="col-12">
+                        <input type="text" name="" id="" class="form-control"><br>
+                        
+                    </div>
+
+                </div>
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Line 1</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Line 2</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">City</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">State</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Zip Code</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Country</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Starting salary</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="number" id="email" name="email" class="form-control">
+                            <label for="email" class="">Phone number</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text" class="form-control">
+                            <label  class="">Job title</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text"  class="form-control">
+                            <label for="email" class="">Ending salary</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Supervisor</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Reason for leaving </label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="date" class="form-control">
+                            <label  class="">From</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="date"  class="form-control">
+                            <label for="email" class="">to</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <div class="row">
+                    <!--Grid column-->
+                    <div class="col-6">
+                        <div class="lg-form mb-0">
+                            <textarea name="" id="" class="form-control">
+
+                            </textarea>
+                            <label for="name" class="">Responsabilities</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    
+                    <div class="col-6">
+                        <div class="lg-form mb-0">
+                            <select class="form-select" aria-label="" style="border:2px ; width: 200px;">
+                                <option selected>YES</option>
+                                <option value="1">NO</option>
+                              </select><br>
+                            <label for="name" class="">May we contact your previous supervisor for a reference? </label>
+                        </div>
+                    </div>
+                </div>
+
+                <br><h5>Military affiliation</h5><br>
+                 <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="date" id="name" name="name" class="form-control">
+                            <label for="name" class="">From</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="date" id="email" name="email" class="form-control">
+                            <label>To</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Rank at discharge</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-3">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Type of discharge</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-6">
+                        <div class="md-form mb-0">
+                            <textarea name="" id="" class="form-control"></textarea>
+                            <label for="name" class="">If other than honorable, explain</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-6">
+                        <div class="md-form mb-0">
+                            <textarea name="" id="" class="form-control"></textarea>
+                            <label for="email" class="">How did you hear about us? </label>
+                        </div>
+                    </div>
+                </div> <br><br>
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <input type="text" class="form-control">
+                        <label for="">Signature</label>
+                    </div>
+                </div>
+            </fieldset>
+            <center>
+            <button class="btn-lg btn btn-success" type="submit" style="width: 60%;">Submit</button>
+            </center>
+            </form>
+            
+
+        </div>   
+    </div>
+
+</section>
+
+{% endblock%}
